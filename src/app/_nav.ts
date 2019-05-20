@@ -41,6 +41,39 @@ export const navItems: NavData[] = [
   },
   {
     title: true,
+    name: 'Documents'
+  },
+  {
+    name: 'Top View',
+    url: '/charts',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Top Download',
+    url: '/charts',
+    icon: 'icon-star'
+  },
+  {
+    name: 'New Update',
+    url: '/charts',
+    icon: 'icon-star'
+  },
+  {
+    title: true,
+    name: 'Type'
+  },
+  {
+    name: 'Type1',
+    url: '/charts',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Type2',
+    url: '/charts',
+    icon: 'icon-star'
+  },
+  {
+    title: true,
     name: 'Theme'
   },
   {
