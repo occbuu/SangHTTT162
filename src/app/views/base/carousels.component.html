@@ -1,136 +1,68 @@
 <div class="animated fadeIn">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-12">
       <div class="card">
         <div class="card-header">
-          Bootstrap Carousel
-          <div class="card-header-actions">
-            <a href="https://valor-software.com/ngx-bootstrap/#/carousel" target="_blank">
-              <small className="text-muted">docs</small>
-            </a>
-          </div>
+          <strong>Tìm kiếm</strong>
         </div>
         <div class="card-body">
-          <carousel [interval]="3000">
-            <slide>
-              <img src="https://loremflickr.com/900/500/mountains?lock=1" alt="First slide" style="display: block; width: 100%;">
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/mountains?lock=2" alt="Second slide" style="display: block; width: 100%;">
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/mountains?lock=3" alt="Third slide" style="display: block; width: 100%;">
-            </slide>
-          </carousel>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-header">
-          Carousel
-          <small> optional captions</small>
-        </div>
-        <div class="card-body">
-          <carousel [interval]="4500">
-            <slide>
-              <img src="https://loremflickr.com/900/500/nature?lock=1" alt="First slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Nhập từ khóa">
               </div>
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/nature?lock=2" alt="Second slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/nature?lock=3" alt="Third slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </slide>
-          </carousel>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-header">
-          Carousel
-          <small> configuring defaults</small>
-        </div>
-        <div class="card-body">
-          <carousel>
-            <slide>
-              <img src="https://loremflickr.com/900/500/city?lock=1" alt="First slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/city?lock=2" alt="Second slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </slide>
-            <slide>
-              <img src="https://loremflickr.com/900/500/city?lock=3" alt="Third slide" style="display: block; width: 100%;">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </slide>
-          </carousel>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-header">
-          Carousel
-          <small> dynamic slides</small>
-        </div>
-        <div class="card-body">
-          <carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
-            <slide *ngFor="let slide of slides; let index=index">
-              <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
-
-              <div class="carousel-caption">
-                <h4>Slide {{index}}</h4>
-                <p>{{slide.text}}</p>
-              </div>
-            </slide>
-          </carousel>
-          <br/>
-          <div>
-            <button type="button" class="btn btn-info"
-                    (click)="addSlide()">Add Slide
-            </button>
-            <button type="button" class="btn btn-info"
-                    (click)="removeSlide()">Remove Current
-            </button>
-            <button type="button" class="btn btn-info"
-                    (click)="removeSlide(2)">Remove #3
-            </button>
-          </div>
-          <div>
-            <div class="checkbox">
-              <label><input type="checkbox" [(ngModel)]="noWrapSlides">Disable Slide Looping</label>
             </div>
-
-            <span>Interval, in milliseconds (Enter a negative number or 0 to stop the interval.): </span>
-            <input type="number" class="form-control" [(ngModel)]="myInterval">
           </div>
         </div>
+        <div class="row">
+          <div class="col-5"></div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-sm btn-primary" style="margin-bottom: 2%"><i
+                class="fa fa-dot-circle-o"></i> Tìm kiếm</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <strong>Thư mời</strong>
+        </div>
+        <div class="card-body">
+          <div *ngFor="let i of data">
+            <div class="row">
+              <div class="col-12">
+                <div class="row card-file">
+                  <div class="col-3">
+                    <img class="card-img" src="./assets/img/{{i.img}}" />
+                  </div>
+                  <div class="col-7">
+                    <h4 style="color: blue">{{i.title}}</h4>
+                    <h5 style="color: cornflowerblue">{{i.type}}</h5>
+                    <h5 style="color: dimgray">Lượt tải xuống: {{i.download}}</h5>
+                    <i class="icon-clock icons font-xl d-block mt-4"> {{i.date}}</i>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>Tải xuống</button>
+                    <button class="btn btn-success" [ngStyle]="style"><i class="fa fa-edit"></i>Chỉnh sửa</button>
+                    <button class="btn btn-dark" [ngStyle]="style"><i class="fa fa-remove"></i> Xóa</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <nav style="padding-left: 40%">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

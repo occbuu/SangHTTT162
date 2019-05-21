@@ -30,7 +30,7 @@ export interface NavData {
 }
 
 export const navItems: NavData[] = [
-  {
+  /*{
     name: 'Dashboard',
     url: '/dashboard',
     icon: 'icon-speedometer',
@@ -38,41 +38,71 @@ export const navItems: NavData[] = [
       variant: 'info',
       text: 'NEW'
     }
-  },
+  },*/
   {
     title: true,
-    name: 'Documents'
+    name: 'Trang chủ'
   },
   {
-    name: 'Top View',
-    url: '/charts',
+    name: 'Trang chủ',
+    url: '/dashboard',
     icon: 'icon-star'
   },
   {
-    name: 'Top Download',
-    url: '/charts',
-    icon: 'icon-star'
-  },
-  {
-    name: 'New Update',
-    url: '/charts',
+    name: 'Tìm kiếm',
+    url: '/base/tabs',
     icon: 'icon-star'
   },
   {
     title: true,
-    name: 'Type'
+    name: 'Loại'
   },
   {
-    name: 'Type1',
-    url: '/charts',
+    name: 'Thông báo',
+    url: '/base/cards',
     icon: 'icon-star'
   },
   {
-    name: 'Type2',
-    url: '/charts',
+    name: 'Thư mời',
+    url: '/base/carousels',
     icon: 'icon-star'
   },
   {
+    name: 'Chỉ thị',
+    url: '/base/collapses',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Đề án',
+    url: '/base/forms',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Kế hoạch',
+    url: '/base/paginations',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Hướng dẫn',
+    url: '/base/popovers',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Báo cáo',
+    url: '/base/progress',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Công văn',
+    url: '/base/switches',
+    icon: 'icon-star'
+  },
+  {
+    name: 'Quyết định',
+    url: '/base/tables',
+    icon: 'icon-star'
+  },
+  /*{
     title: true,
     name: 'Theme'
   },
@@ -303,5 +333,5 @@ export const navItems: NavData[] = [
     icon: 'icon-layers',
     variant: 'danger',
     attributes: { target: '_blank', rel: 'noopener' }
-  }
+  }*/
 ];

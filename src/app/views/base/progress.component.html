@@ -1,58 +1,68 @@
 <div class="animated fadeIn">
-  <div class="card">
-    <div class="card-header">
-      Bootstrap Progress
-      <div class="card-header-actions">
-        <a href="https://valor-software.com/ngx-bootstrap/#/progressbar" target="_blank">
-          <small className="text-muted">docs</small>
-        </a>
-      </div>
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-sm-4">
-          <progressbar class="progress" [value]="55" [max]="100"></progressbar>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Tìm kiếm</strong>
         </div>
-        <div class="col-sm-4">
-          <progressbar class="progress progress-striped" [value]="22" [max]="100" type="warning">22%</progressbar>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Nhập từ khóa">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <progressbar class="progress progress-striped active" [max]="200" [value]="166" type="danger"><i>166 / 200</i></progressbar>
+        <div class="row">
+          <div class="col-5"></div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-sm btn-primary" style="margin-bottom: 2%"><i
+                class="fa fa-dot-circle-o"></i> Tìm kiếm</button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      Progress <small>dynamic</small>
-    </div>
-    <div class="card-body">
-      <progressbar class="progress progress-striped progress-animated" [max]="max" [value]="dynamic">
-        <span style="color:white; white-space:nowrap;">{{dynamic}} / {{max}}</span>
-      </progressbar>
-
-      <small><em>No animation</em></small>
-      <progressbar class="progress progress-success" [value]="dynamic" [max]="100" type="success"><b>{{dynamic}}%</b></progressbar>
-
-      <small><em>Object (changes type based on value)</em></small>
-      <progressbar class="progress-bar progress-bar-striped progress-bar-animated" [value]="dynamic" [max]="max" [type]="type">
-        {{type}} <i *ngIf="showWarning">!!! Watch out !!!</i>
-      </progressbar>
-      <br>
-      <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      Progress <small>stacked</small>
-    </div>
-    <div class="card-body">
-      <div class="row col-lg-12">
-        <progressbar class="progress" [value]="stacked" [max]="100"></progressbar>
-      </div>
-      <br>
-      <div class="row col-md-12">
-        <button type="button" class="btn btn-sm btn-primary" (click)="randomize()">{{buttonCaption}} randomize</button>
+      <div class="card">
+        <div class="card-header">
+          <strong>Báo cáo</strong>
+        </div>
+        <div class="card-body">
+          <div *ngFor="let i of data">
+            <div class="row">
+              <div class="col-12">
+                <div class="row card-file">
+                  <div class="col-3">
+                    <img class="card-img" src="./assets/img/{{i.img}}" />
+                  </div>
+                  <div class="col-7">
+                    <h4 style="color: blue">{{i.title}}</h4>
+                    <h5 style="color: cornflowerblue">{{i.type}}</h5>
+                    <h5 style="color: dimgray">Lượt tải xuống: {{i.download}}</h5>
+                    <i class="icon-clock icons font-xl d-block mt-4"> {{i.date}}</i>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>Tải xuống</button>
+                    <button class="btn btn-success" [ngStyle]="style"><i class="fa fa-edit"></i>Chỉnh sửa</button>
+                    <button class="btn btn-dark" [ngStyle]="style"><i class="fa fa-remove"></i> Xóa</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <nav style="padding-left: 40%">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

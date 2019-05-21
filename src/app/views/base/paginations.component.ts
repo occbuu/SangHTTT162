@@ -3,29 +3,48 @@ import { Component, Input, ViewEncapsulation  } from '@angular/core';
 @Component({
   templateUrl: 'paginations.component.html',
   styles: ['.pager li.btn:active { box-shadow: none; }'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./cards.component.css']
 })
 export class PaginationsComponent {
 
-  constructor() { }
-
-  totalItems: number = 64;
-  currentPage: number   = 4;
-  smallnumPages: number = 0;
-
-  maxSize: number = 5;
-  bigTotalItems: number = 675;
-  bigCurrentPage: number = 1;
-  numPages: number = 0;
-
-  currentPager: number   = 4;
-
-  setPage(pageNo: number): void {
-    this.currentPage = pageNo;
+  style : any;
+  constructor() {
+    if(localStorage.getItem('username') !== 'admin') {
+      this.style = {'display': 'none'}
+    }
   }
-
-  pageChanged(event: any): void {
-    console.log('Page changed to: ' + event.page);
-    console.log('Number items per page: ' + event.itemsPerPage);
-  }
+  data: any[] = [
+    {
+      id: 1,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 2,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 3,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 4,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    }
+  ]
 }

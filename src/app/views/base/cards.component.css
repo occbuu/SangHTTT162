@@ -7,10 +7,17 @@ transition: 0.3s;
     border-radius:5%;
     -moz-border-radius:5%;
     -webkit-border-radius:5%;
-    max-width :100%;
+    max-width :92%;
     height :auto;
 }
 
 .card-file {
     margin: 1%;
 }
+
+.btn {
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 5%;
+  }

@@ -19,6 +19,8 @@ import { P404Component } from './views/error/404.component';
 import { P500Component } from './views/error/500.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
+import { StorageServiceModule } from 'ngx-webstorage-service';
+import { FormsModule } from '@angular/forms';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -52,7 +54,9 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    StorageServiceModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,

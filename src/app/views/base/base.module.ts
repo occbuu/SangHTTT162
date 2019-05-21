@@ -45,6 +45,8 @@ import { TooltipsComponent } from './tooltips.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { Component } from '@angular/core';
+import { StorageServiceModule } from 'ngx-webstorage-service';
 
 @NgModule({
   imports: [
@@ -58,7 +60,8 @@ import { BaseRoutingModule } from './base-routing.module';
     PaginationModule.forRoot(),
     PopoverModule.forRoot(),
     ProgressbarModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    StorageServiceModule
   ],
   declarations: [
     CardsComponent,

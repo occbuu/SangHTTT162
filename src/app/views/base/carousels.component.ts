@@ -1,33 +1,48 @@
 import { Component } from '@angular/core';
-import { CarouselConfig } from 'ngx-bootstrap/carousel';
 
 @Component({
-  templateUrl: 'carousels.component.html',   providers: [
-    { provide: CarouselConfig, useValue: { interval: 1500, noPause: true } }
-  ]
+  templateUrl: 'carousels.component.html',
+  styleUrls: ['./cards.component.css']
 })
 export class CarouselsComponent {
-
-  myInterval: number = 6000;
-  slides: any[] = [];
-  activeSlideIndex: number = 0;
-  noWrapSlides: boolean = false;
-
+  style : any;
   constructor() {
-    for (let i = 0; i < 4; i++) {
-      this.addSlide();
+    if(localStorage.getItem('username') !== 'admin') {
+      this.style = {'display': 'none'}
     }
   }
-
-  addSlide(): void {
-    this.slides.push({
-      image: `https://loremflickr.com/900/500/sailing?random=${this.slides.length % 8 + 1}/`
-    });
-  }
-
-  removeSlide(index?: number): void {
-    const toRemove = index ? index : this.activeSlideIndex;
-    this.slides.splice(toRemove, 1);
-  }
-
+  data : any[] = [
+    {
+      id: 1,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 2,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 3,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    },
+    {
+      id: 4,
+      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      type: '',
+      img: 'word.png',
+      download: 360,
+      date: '24/08/2017'
+    }
+  ]
 }
