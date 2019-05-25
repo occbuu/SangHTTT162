@@ -16,35 +16,35 @@ export class PaginationsComponent {
   data: any[] = [
     {
       id: 1,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Kế hoạch 133-KH/TĐTN-BCNLĐ v/v tăng cường xây dựng và củng cố hoạt động đoàn tại các doanh nghiệp ngoài khu vực nhà nước và đơn vị sự nghiệp ngoài công lập năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 310,
+      date: '25/05/2019'
     },
     {
       id: 2,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Kế hoạch 132-KH/TĐTN-BQT tổ chức hoạt động tình nguyện hè tại nước Cộng hòa dân chủ nhân dân Lào năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 320,
+      date: '24/05/2019'
     },
     {
       id: 3,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Kế hoạch 131-KH/TĐTN-VP về cuộc thi Ý tưởng Sáng tạo trẻ Thành phố Hồ Chí Minh lần XI năm 2019, chủ đề “Ý tưởng, dự án tình nguyện”',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 330,
+      date: '23/05/2019'
     },
     {
       id: 4,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Kế hoạch 130-KH/TĐTN-BCNLĐ tổ chức Chiến dịch tình nguyện Kỳ nghỉ hồng lần thứ 18 năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 350,
+      date: '22/05/2019'
     }
   ]
 

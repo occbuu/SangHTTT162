@@ -14,35 +14,43 @@ export class TabsComponent {
   data: any[] = [
     {
       id: 1,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Lịch làm việc tuần lễ 21/2019 của Ban Thường vụ Thành Đoàn (Từ ngày 20/5/2019 đến ngày 26/5/2019)',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 325,
+      date: '24/05/2019'
     },
     {
       id: 2,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Công văn 1891-CV/TĐTN-VP v/v tăng cường các biện pháp phòng chống bệnh dịch tả heo Châu Phi trên địa bàn thành phố',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 346,
+      date: '24/05/2019'
     },
     {
       id: 3,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thư mời 163-TM/TĐTN-BMT.ANQP.ĐBDC dự Chương trình sinh hoạt truyền thống "Điện Biên Phủ - Đường Trường Sơn, Bản hùng ca bất diệt"',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 350,
+      date: '24/05/2019'
     },
     {
       id: 4,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thông báo 876-TB/TĐTN-BTNTH Thông báo số 04 Hội thi Olympic các môn khoa học Mác - Lênin, Tư tưởng Hồ Chí Minh "Tầm nhìn xuyên thế kỷ" lần 10 năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 349,
+      date: '24/05/2019'
+    },
+    {
+      id: 5,
+      title: 'Kế hoạch 133-KH/TĐTN-BCNLĐ v/v tăng cường xây dựng và củng cố hoạt động đoàn tại các doanh nghiệp ngoài khu vực nhà nước và đơn vị sự nghiệp ngoài công lập năm 2019 ',
+      type: '',
+      img: 'word.png',
+      download: 334,
+      date: '24/05/2019'
     }
   ]
 

@@ -14,35 +14,35 @@ export class SwitchesComponent {
   data: any[] = [
     {
       id: 1,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Công văn 1891-CV/TĐTN-VP v/v tăng cường các biện pháp phòng chống bệnh dịch tả heo Châu Phi trên địa bàn thành phố',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 310,
+      date: '24/05/2019'
     },
     {
       id: 2,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Công văn 1861-CV/TĐTN-BMT.ANQP.ĐBDC v/v giao chỉ tiêu nợ quá hạn của nguồn vốn vay ủy thác từ Ngân hàng Chính sách xã hội năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 349,
+      date: '23/05/2019'
     },
     {
       id: 3,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Công văn 1815-CV/TĐTN-VP v/v sử dụng Áo thanh niên Việt Nam',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 325,
+      date: '22/05/2019'
     },
     {
       id: 4,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Công văn 1676-CV/TĐTN-VP v/v tăng cường công tác vận động đoàn viên, thanh niên hiến máu tình nguyện năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 350,
+      date: '21/05/2019'
     }
   ]
 

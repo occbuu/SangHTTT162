@@ -8,35 +8,35 @@ export class CardsComponent {
   data : any[] = [
     {
       id: 1,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thông báo 876-TB/TĐTN-BTNTH Thông báo số 04 Hội thi Olympic các môn khoa học Mác - Lênin, Tư tưởng Hồ Chí Minh "Tầm nhìn xuyên thế kỷ" lần 10 năm 2019',
       type: '',
       img: 'word.png',
       download: 360,
-      date: '24/08/2017'
+      date: '25/05/2019'
     },
     {
       id: 2,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thông báo 875-TB/TĐTN-BTC v/v tham dự Chương trình biểu diễn vở kịch "Cánh đồng rực lửa"',
       type: '',
       img: 'word.png',
       download: 360,
-      date: '24/08/2017'
+      date: '25/05/2019'
     },
     {
       id: 3,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thông báo 870-TB/TĐTN-BTNTH V/v triển khai đăng ký tham gia Chiến dịch tình nguyện Hoa phượng đỏ Lần thứ 14 - năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 315,
+      date: '24/05/2019'
     },
     {
       id: 4,
-      title: 'Bảng phân công nhiệm vụ Uỷ viên Ban thường vụ Đoàn Thanh niên 2014 - 2017',
+      title: 'Thông báo 868-TB/TĐTN-BTN v/v tổ chức tập huấn phụ trách thiếu nhi địa bàn toàn thành năm 2019',
       type: '',
       img: 'word.png',
-      download: 360,
-      date: '24/08/2017'
+      download: 250,
+      date: '23/05/2019'
     }
   ]
   style : any;
