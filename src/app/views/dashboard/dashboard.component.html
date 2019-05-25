@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-12">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Nhập từ khóa">
+                <input type="text" class="form-control" id="name" placeholder="Nhập từ khóa" name="word" [(ngModel)]="keyword">
               </div>
             </div>
           </div>
@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-5"></div>
           <div class="col-4">
-            <button type="submit" class="btn btn-sm btn-primary" style="margin-bottom: 2%"><i
+            <button type="submit" class="btn btn-sm btn-primary" style="margin-bottom: 2%" (click)="clickSearch()"><i
                 class="fa fa-dot-circle-o"></i> Tìm kiếm</button>
           </div>
         </div>
