@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   templateUrl: 'tables.component.html',
@@ -6,10 +7,16 @@ import { Component } from '@angular/core';
 })
 export class TablesComponent {
   style : any;
-  constructor() {
+  constructor(public http: HttpClient) {
     if(localStorage.getItem('username') !== 'admin') {
       this.style = {'display': 'none'}
     }
+    this.http.get("./assets/data.json").subscribe(
+      data => {
+        this.data = data as any[];	 // FILL THE ARRAY WITH DATA.
+        //  console.log(this.arrBirds[1]);
+      },
+    );
   }
   data: any[] = [
     {
